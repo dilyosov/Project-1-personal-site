@@ -33,15 +33,21 @@ body {
 /* Hero section styles */
 .hero {
   background: #e0e7ff; /* soft light indigo */
+  /* Add a background image for the hero section */
+  background-image: url('img/hero-bg.jpg'); /* uses your image from the img folder */
+  background-size: cover; /* makes the image cover the whole area */
+  background-position: center; /* centers the image */
   padding: 60px 0; /* vertical spacing */
   text-align: center; /* center text for a welcoming look */
   border-bottom: 1px solid #c7d2fe; /* subtle line */
 }
 .hero h1 {
+  color:yellowgreen;
   margin: 0 0 10px 0;
   font-size: 32px;
 }
 .hero p {
+  color:yellow;
   margin: 0 0 20px 0;
   font-size: 18px;
 }
@@ -82,8 +88,8 @@ section p {
 
 /* Bio section */
 .bio {
-  background: #ffffff; /* white card-style background */
-  border: 1px solid #e5e7eb; /* light border */
+  background: springgreen; /* white card-style background */
+  border: 1px solid green; /* light border */
   border-radius: 8px; /* rounded corners */
   padding: 20px; /* inner spacing */
 }
