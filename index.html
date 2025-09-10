@@ -2,10 +2,123 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- makes the page fit mobile screens -->
   <title>My Personal Site</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <!-- HERO: A friendly welcome at the top of the page -->
+  <header class="hero">
+    <div class="container">
+      <!-- Navigation buttons for each section (now above the heading) -->
+      <nav>
+        <!-- Each button is a link that scrolls to a section below -->
+        <a class="btn" href="#bio">About Me</a>
+        <a class="btn" href="#skills">Skills</a>
+        <a class="btn" href="#projects">Projects</a>
+        <a class="btn" href="#contact">Contact</a>
+      </nav>
+      <h1>Hi, I'm Your Name</h1> <!-- replace with your name -->
+      <p>Web development student building a portfolio of beginner-friendly projects.</p>
+    </div>
+  </header>
+
+  <hr class="divider">
+
+  <!-- BIO: A short introduction about you -->
+  <section id="bio">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="bio">
+        <p>
+          Hello! I'm learning HTML and CSS and creating simple, clean web pages. I enjoy
+          building small projects to practice the basics and improve a little each day.
+        </p>
+        <p>
+          This site will grow as I add more class assignments and personal projects.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- SKILLS: Simple list of skills as small badges -->
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <p>These are the tools and topics I'm practicing:</p>
+      <ul class="skills-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Accessibility</li>
+        <li>Responsive Design</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- PROJECTS: Cards stacked vertically (easy to add more later) -->
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <p>Below are placeholder cards. Replace the text and links as you build projects.</p>
+
+      <article class="project-card">
+        <h3>Project One</h3>
+        <p>A short description of what the project does and what you learned.</p>
+        <p>
+          <a href="#" aria-label="Open Project One">View live</a> ·
+          <a href="#" aria-label="Open Project One source code on GitHub">Source</a>
+        </p>
+      </article>
+
+      <article class="project-card">
+        <h3>Project Two</h3>
+        <p>Another project description. Keep it simple and clear.</p>
+        <p>
+          <a href="#" aria-label="Open Project Two">View live</a> ·
+          <a href="#" aria-label="Open Project Two source code on GitHub">Source</a>
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- CONTACTS: Ways for people to reach you -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>You can reach me through any of these links:</p>
+      <ul class="contact-list">
+        <li>Email: <a href="mailto:you@example.com">you@example.com</a></li> <!-- replace with your email -->
+        <li>GitHub: <a href="https://github.com/your-username" target="_blank" rel="noopener">@your-username</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/your-username" target="_blank" rel="noopener">your-username</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- COPYRIGHT: Footer at the bottom -->
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p> <!-- replace with your name -->
+    </div>
+  </footer>
+
+  <!-- Tiny inline script to automatically show the current year -->
+  <script>
+    // This updates the year so you don't have to change it every January
+    (function(){
+      var span = document.getElementById('year');
+      if (span) {
+        span.textContent = new Date().getFullYear();
+      }
+    })();
+  </script>
 </body>
 </html>
